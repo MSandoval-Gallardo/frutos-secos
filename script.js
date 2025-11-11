@@ -7,9 +7,11 @@ const PRODUCTS = [
       {id:6,name:'Semillas Mix 100g',type:'mix',price:1000,desc:'Crujiente, con opción sin sal.',image:'semillas_mix.jpg'},
       {id:7,name:'Maní confitado (tradicional) 100g',type:'mani',price:1000,desc:'Bajo en carbohidratos.',image:'mani_confitado_t.jpg'},
       {id:8,name:'Frutos Mix 100g',type:'mix',price:1000,desc:'Bajo en carbohidratos.',image:'frutos_mix.jpg'},
-      {id:9,name:'Guaguitas 100g',type:'otros',price:1000,desc:'Bajo en carbohidratos.',image:'guaguitas.jpg'},
+      {id:9,name:'Guagüitas 100g',type:'otros',price:1000,desc:'Bajo en carbohidratos.',image:'guaguitas.jpg'},
       {id:10,name:'Maní con cascara 100g',type:'mani',price:1000,desc:'Bajo en carbohidratos.',image:'mani_con_cascara.jpg'},
       {id:11,name:'Maní japones 100g',type:'mani',price:1000,desc:'Bajo en carbohidratos.',image:'mani_japones.jpg'},
+      {id:12,name:'Pasas 100g',type:'otro',price:1500,desc:'Bajo en carbohidratos.',image:'pasas.jpg'},
+
 
 
     ];

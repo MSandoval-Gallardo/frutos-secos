@@ -9,40 +9,49 @@
 <body>
   <header>
     <div class="brand">    
-    <div>
-      <div class="logo"><img src="img/logo1.jpeg" alt="logo" style="width: 46px; height: 46px;"></div>
-        <h1>Frutos Secos · La Fran</h1>
-        <div style="font-size:12px;color:var(--muted)">Calidad y sabores naturales</div>
-      </div>
+        <div>
+            <div class="logo"><img src="img/logo1.jpeg" alt="logo" style="width: 46px; height: 46px;"></div>
+                <h1>Frutos Secos · La Fran</h1>
+            <div style="font-size:12px;color:var(--muted)">Calidad y sabores naturales</div>
+        </div>
     </div>
-    <nav>
-      <div class="search">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M21 21l-4.35-4.35" stroke="#666" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="11" cy="11" r="5" stroke="#666" stroke-width="1.6"></circle></svg>
-        <input id="q" type="search" placeholder="Buscar: almendras, nueces..." />
-      </div>
-    </nav>
-  </header>
-
+</header>
   <main>
     <section class="hero">
       <div class="hero-left hero-card">
+        <div>
+                <nav>
+                    <div class="search">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M21 21l-4.35-4.35" stroke="#666" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="11" cy="11" r="5" stroke="#666" stroke-width="1.6"></circle></svg>
+                        <input id="q" type="search" placeholder="Buscar: almendras, nueces..." />
+                    </div>
+                </nav>
+            </div>
         <h2>Frutos secos para cada ocasión</h2>
         <p style="color:var(--muted)">Confitados, salados, mixtos o premium: selecciona la presentación y llévate lo mejor de la naturaleza.</p>
-        <div class="filters">
-          <select id="filterType">
-            <option value="all">Todos los tipos</option>
-            <option value="almendras">Almendras</option>
-            <option value="nuez">Nueces</option>
-            <option value="mix">Mix</option>
-            <option value="mani">Maní</option>
-            <option value="otros">otros</option>
-          </select>
-          <select id="sortBy">
-            <option value="default">Orden recomendado</option>
-            <option value="price-asc">Precio: bajo a alto</option>
-            <option value="price-desc">Precio: alto a bajo</option>
-          </select>
+
+        <div class="hero-search">
+            
+            <div class="card filters">
+            
+                <select id="filterType">
+                <option value="all">Todos los tipos</option>
+                <option value="almendras">Almendras</option>
+                <option value="nuez">Nueces</option>
+                <option value="mix">Mix</option>
+                <option value="mani">Maní</option>
+                <option value="otros">otros</option>
+                </select>
+                </div>
+                <div class="card filters">
+                <select id="sortBy">
+                <option value="default">Orden recomendado</option>
+                <option value="price-asc">Precio: bajo a alto</option>
+                <option value="price-desc">Precio: alto a bajo</option>
+                </select>
+            </div>
         </div>
+        
       </div>
       
     </section>
