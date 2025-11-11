@@ -5,7 +5,13 @@ const PRODUCTS = [
       {id:4,name:'Maní salado 100g',type:'mani',price:1000,desc:'Mezcla de almendra, nuez y pasas.',image:'mani_salado.jpg'},
       {id:5,name:'Nueces 100g',type:'nuez',price:1000,desc:'Tostados y listos para comer.',image:'nueces.jpg'},
       {id:6,name:'Semillas Mix 100g',type:'mix',price:1000,desc:'Crujiente, con opción sin sal.',image:'semillas_mix.jpg'},
-      {id:7,name:'Maní confitado (tradicional) 100g',type:'mani',price:1000,desc:'Bajo en carbohidratos.',image:'mani_confitado_t.jpg'}
+      {id:7,name:'Maní confitado (tradicional) 100g',type:'mani',price:1000,desc:'Bajo en carbohidratos.',image:'mani_confitado_t.jpg'},
+      {id:8,name:'Frutos Mix 100g',type:'mix',price:1000,desc:'Bajo en carbohidratos.',image:'frutos_mix.jpg'},
+      {id:9,name:'Guaguitas 100g',type:'otros',price:1000,desc:'Bajo en carbohidratos.',image:'guaguitas.jpg'},
+      {id:10,name:'Maní con cascara 100g',type:'mani',price:1000,desc:'Bajo en carbohidratos.',image:'mani_con_cascara.jpg'},
+      {id:11,name:'Maní japones 100g',type:'mani',price:1000,desc:'Bajo en carbohidratos.',image:'mani_japones.jpg'},
+
+
     ];
 
     const productsEl = document.getElementById('products');
