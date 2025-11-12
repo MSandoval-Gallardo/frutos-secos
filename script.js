@@ -16,6 +16,10 @@ const PRODUCTS = [
 
     ];
 
+
+
+
+
     const productsEl = document.getElementById('products');
     const q = document.getElementById('q');
     const filterType = document.getElementById('filterType');
@@ -28,7 +32,10 @@ const PRODUCTS = [
       list.forEach(p=>{
         const div = document.createElement('div'); div.className='product';
         div.innerHTML = `
-          <div class="thumb"><img src="./img/${p.image}" alt="${p.name}"></div>
+          <div class="thumb">
+            <a href="./img/${p.image}" data-lightbox="galeria">
+              <img src="./img/${p.image}" alt="${p.name}" width="150"></div>
+            </a>
           <div style="flex:1">
             <div style="font-weight:700">${p.name}</div>
             
