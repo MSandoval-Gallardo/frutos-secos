@@ -5,7 +5,7 @@ const PRODUCTS = [
       {id:4,name:'Maní salado 100g',type:'mani',price:1000,desc:'',image:'mani_salado.jpg'},
       {id:5,name:'Nueces 100g',type:'nuez',price:1000,desc:'',image:'nueces.jpg'},
       {id:6,name:'Semillas Mix 100g',type:'mix',price:1000,desc:'',image:'semillas_mix.jpg'},
-      {id:7,name:'Maní confitado (tradicional) 100g',type:'mani',price:1000,desc:'',image:'mani_confitado_t.jpg'},
+      {id:7,name:'Maní confitado (tradicional) 100g',type:'',price:1000,desc:'',image:'mani_confitado_t.jpg'},
       {id:8,name:'Frutos Mix 100g',type:'mix',price:1000,desc:'',image:'frutos_mix.jpg'},
       {id:9,name:'Guagüitas 100g',type:'otros',price:1000,desc:'',image:'guaguitas.jpg'},
       {id:10,name:'Maní con cascara 100g',type:'mani',price:1000,desc:'',image:'mani_con_cascara.jpg'},
@@ -15,10 +15,6 @@ const PRODUCTS = [
 
 
     ];
-
-
-
-
 
     const productsEl = document.getElementById('products');
     const q = document.getElementById('q');
@@ -47,12 +43,12 @@ const PRODUCTS = [
         productsEl.appendChild(div);
       })
     }
-
+      
     function filtered(){
       let res = PRODUCTS.slice();
-      const term = q.value.trim().toLowerCase();
+      const term = q.value.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
       if(filterType.value !== 'all') res = res.filter(r=>r.type === filterType.value);
-      if(term) res = res.filter(r=> (r.name + ' ' + r.desc).toLowerCase().includes(term));
+      if(term) res = res.filter(r=> (r.name + ' ' + r.desc + ' ' + r.type).toLowerCase().includes(term));
       if(sortBy.value === 'price-asc') res.sort((a,b)=>a.price-b.price);
       if(sortBy.value === 'price-desc') res.sort((a,b)=>b.price-a.price);
       return res;
